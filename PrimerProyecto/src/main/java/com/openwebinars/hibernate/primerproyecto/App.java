@@ -30,9 +30,12 @@ public class App
     	user.setUserMensagge("Mensaje hello word");
     	
     	User user2 = new User();
-    	user2.setId(1);
+    	user2.setId(2);
     	user2.setUsername("Juan");
     	user2.setUserMensagge("Otro hello word");
+    	
+    	session.save(user);
+    	session.save(user2);
     	
     	session.close();
     	sf.close();
